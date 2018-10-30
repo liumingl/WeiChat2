@@ -1,7 +1,10 @@
 # WeiChat
 视频教程《使用Swift &amp; Firebase开发iOS 12聊天App》的项目源码
 
+
+
 Podfile
+```
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
@@ -24,3 +27,4 @@ target 'WeiChat' do
   #pod 'ImagePicker'
 
 end
+```
