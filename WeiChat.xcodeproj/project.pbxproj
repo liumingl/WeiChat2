@@ -7,21 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47516F5321874B32007C1979 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47516F5221874B32007C1979 /* GoogleService-Info.plist */; };
+		47516F55218753A5007C1979 /* FUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47516F54218753A5007C1979 /* FUser.swift */; };
+		47516F57218753BF007C1979 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47516F56218753BF007C1979 /* Constants.swift */; };
+		47516F592187557B007C1979 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47516F582187557B007C1979 /* HelperFunctions.swift */; };
+		47516F5B2187559A007C1979 /* FCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47516F5A2187559A007C1979 /* FCollectionReference.swift */; };
+		47516F5D2188980F007C1979 /* FinishRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47516F5C2188980F007C1979 /* FinishRegistrationViewController.swift */; };
 		47F09B982186028F009FB46E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F09B972186028F009FB46E /* AppDelegate.swift */; };
-		47F09B9A2186028F009FB46E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F09B992186028F009FB46E /* ViewController.swift */; };
 		47F09B9D2186028F009FB46E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F09B9B2186028F009FB46E /* Main.storyboard */; };
 		47F09B9F21860290009FB46E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47F09B9E21860290009FB46E /* Assets.xcassets */; };
 		47F09BA221860290009FB46E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F09BA021860290009FB46E /* LaunchScreen.storyboard */; };
+		47F09BAA218608B2009FB46E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F09BA9218608B2009FB46E /* WelcomeViewController.swift */; };
+		8C97BD302B1910B29F788365 /* Pods_WeiChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FF1467B1EFBFBD2964A707 /* Pods_WeiChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13FF1467B1EFBFBD2964A707 /* Pods_WeiChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeiChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47516F5221874B32007C1979 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		47516F54218753A5007C1979 /* FUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FUser.swift; sourceTree = "<group>"; };
+		47516F56218753BF007C1979 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		47516F582187557B007C1979 /* HelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+		47516F5A2187559A007C1979 /* FCollectionReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCollectionReference.swift; sourceTree = "<group>"; };
+		47516F5C2188980F007C1979 /* FinishRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishRegistrationViewController.swift; sourceTree = "<group>"; };
 		47F09B942186028F009FB46E /* WeiChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F09B972186028F009FB46E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		47F09B992186028F009FB46E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		47F09B9C2186028F009FB46E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47F09B9E21860290009FB46E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47F09BA121860290009FB46E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47F09BA321860290009FB46E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47F09BA9218608B2009FB46E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		655DCCF20F6E73CF3B9AA3B6 /* Pods-WeiChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeiChat/Pods-WeiChat.release.xcconfig"; sourceTree = "<group>"; };
+		CAF6DA30D5EAC3BD9F12B89E /* Pods-WeiChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeiChat/Pods-WeiChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +45,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C97BD302B1910B29F788365 /* Pods_WeiChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4718AEFB915BB8B9172FDF46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13FF1467B1EFBFBD2964A707 /* Pods_WeiChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47516F5E2188982D007C1979 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				47516F56218753BF007C1979 /* Constants.swift */,
+				47516F582187557B007C1979 /* HelperFunctions.swift */,
+				47516F5A2187559A007C1979 /* FCollectionReference.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		47516F5F21889839007C1979 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				47516F54218753A5007C1979 /* FUser.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		47F09B8B2186028F009FB46E = {
 			isa = PBXGroup;
 			children = (
 				47F09B962186028F009FB46E /* WeiChat */,
 				47F09B952186028F009FB46E /* Products */,
+				9AEFC6D585471143854998DF /* Pods */,
+				4718AEFB915BB8B9172FDF46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +100,26 @@
 			isa = PBXGroup;
 			children = (
 				47F09B972186028F009FB46E /* AppDelegate.swift */,
-				47F09B992186028F009FB46E /* ViewController.swift */,
+				47F09BA9218608B2009FB46E /* WelcomeViewController.swift */,
+				47516F5C2188980F007C1979 /* FinishRegistrationViewController.swift */,
 				47F09B9B2186028F009FB46E /* Main.storyboard */,
 				47F09B9E21860290009FB46E /* Assets.xcassets */,
 				47F09BA021860290009FB46E /* LaunchScreen.storyboard */,
+				47516F5F21889839007C1979 /* Classes */,
+				47516F5E2188982D007C1979 /* Helpers */,
 				47F09BA321860290009FB46E /* Info.plist */,
+				47516F5221874B32007C1979 /* GoogleService-Info.plist */,
 			);
 			path = WeiChat;
+			sourceTree = "<group>";
+		};
+		9AEFC6D585471143854998DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAF6DA30D5EAC3BD9F12B89E /* Pods-WeiChat.debug.xcconfig */,
+				655DCCF20F6E73CF3B9AA3B6 /* Pods-WeiChat.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47F09BA621860290009FB46E /* Build configuration list for PBXNativeTarget "WeiChat" */;
 			buildPhases = (
+				7987EF55A27C55285B415EFF /* [CP] Check Pods Manifest.lock */,
 				47F09B902186028F009FB46E /* Sources */,
 				47F09B912186028F009FB46E /* Frameworks */,
 				47F09B922186028F009FB46E /* Resources */,
+				C8A1F781945B2B9FAED06455 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47F09BA221860290009FB46E /* LaunchScreen.storyboard in Resources */,
+				47516F5321874B32007C1979 /* GoogleService-Info.plist in Resources */,
 				47F09B9F21860290009FB46E /* Assets.xcassets in Resources */,
 				47F09B9D2186028F009FB46E /* Main.storyboard in Resources */,
 			);
@@ -130,13 +191,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7987EF55A27C55285B415EFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeiChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8A1F781945B2B9FAED06455 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WeiChat/Pods-WeiChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IDMPhotoBrowser/IDMPhotoBrowser.framework",
+				"${BUILT_PRODUCTS_DIR}/IQAudioRecorderController/IQAudioRecorderController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SCSiriWaveformView/SCSiriWaveformView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DACircularProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IDMPhotoBrowser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQAudioRecorderController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCSiriWaveformView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeiChat/Pods-WeiChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		47F09B902186028F009FB46E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47F09B9A2186028F009FB46E /* ViewController.swift in Sources */,
+				47516F5B2187559A007C1979 /* FCollectionReference.swift in Sources */,
+				47516F592187557B007C1979 /* HelperFunctions.swift in Sources */,
+				47516F55218753A5007C1979 /* FUser.swift in Sources */,
 				47F09B982186028F009FB46E /* AppDelegate.swift in Sources */,
+				47F09BAA218608B2009FB46E /* WelcomeViewController.swift in Sources */,
+				47516F5D2188980F007C1979 /* FinishRegistrationViewController.swift in Sources */,
+				47516F57218753BF007C1979 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +425,7 @@
 		};
 		47F09BA721860290009FB46E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAF6DA30D5EAC3BD9F12B89E /* Pods-WeiChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +443,7 @@
 		};
 		47F09BA821860290009FB46E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 655DCCF20F6E73CF3B9AA3B6 /* Pods-WeiChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
