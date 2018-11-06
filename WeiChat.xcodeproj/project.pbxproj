@@ -7,28 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47245845218F2F8400D4B6E7 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47245844218F2F8400D4B6E7 /* UserTableViewCell.swift */; };
+		47245848218F357C00D4B6E7 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47245847218F357C00D4B6E7 /* UsersTableViewController.swift */; };
+		4724584A218F3EF400D4B6E7 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47245849218F3EF400D4B6E7 /* ChatsViewController.swift */; };
 		47516F5321874B32007C1979 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47516F5221874B32007C1979 /* GoogleService-Info.plist */; };
 		47516F55218753A5007C1979 /* FUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47516F54218753A5007C1979 /* FUser.swift */; };
 		47516F57218753BF007C1979 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47516F56218753BF007C1979 /* Constants.swift */; };
 		47516F592187557B007C1979 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47516F582187557B007C1979 /* HelperFunctions.swift */; };
 		47516F5B2187559A007C1979 /* FCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47516F5A2187559A007C1979 /* FCollectionReference.swift */; };
 		47516F5D2188980F007C1979 /* FinishRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47516F5C2188980F007C1979 /* FinishRegistrationViewController.swift */; };
+		47D3665A2191DC2C00E61068 /* Recent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D366592191DC2C00E61068 /* Recent.swift */; };
+		47E3BDDA219085CA00F989AE /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E3BDD9219085CA00F989AE /* ProfileTableViewController.swift */; };
 		47F09B982186028F009FB46E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F09B972186028F009FB46E /* AppDelegate.swift */; };
 		47F09B9D2186028F009FB46E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F09B9B2186028F009FB46E /* Main.storyboard */; };
 		47F09B9F21860290009FB46E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47F09B9E21860290009FB46E /* Assets.xcassets */; };
 		47F09BA221860290009FB46E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F09BA021860290009FB46E /* LaunchScreen.storyboard */; };
 		47F09BAA218608B2009FB46E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F09BA9218608B2009FB46E /* WelcomeViewController.swift */; };
+		47F5D62D218B4B6A002D0ABD /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F5D62C218B4B6A002D0ABD /* SettingsTableViewController.swift */; };
 		8C97BD302B1910B29F788365 /* Pods_WeiChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FF1467B1EFBFBD2964A707 /* Pods_WeiChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		13FF1467B1EFBFBD2964A707 /* Pods_WeiChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeiChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47245844218F2F8400D4B6E7 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		47245847218F357C00D4B6E7 /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		47245849218F3EF400D4B6E7 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		47516F5221874B32007C1979 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		47516F54218753A5007C1979 /* FUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FUser.swift; sourceTree = "<group>"; };
 		47516F56218753BF007C1979 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		47516F582187557B007C1979 /* HelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 		47516F5A2187559A007C1979 /* FCollectionReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCollectionReference.swift; sourceTree = "<group>"; };
 		47516F5C2188980F007C1979 /* FinishRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishRegistrationViewController.swift; sourceTree = "<group>"; };
+		47D366592191DC2C00E61068 /* Recent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recent.swift; sourceTree = "<group>"; };
+		47E3BDD9219085CA00F989AE /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		47F09B942186028F009FB46E /* WeiChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F09B972186028F009FB46E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47F09B9C2186028F009FB46E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,6 +47,7 @@
 		47F09BA121860290009FB46E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47F09BA321860290009FB46E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47F09BA9218608B2009FB46E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		47F5D62C218B4B6A002D0ABD /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		655DCCF20F6E73CF3B9AA3B6 /* Pods-WeiChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeiChat/Pods-WeiChat.release.xcconfig"; sourceTree = "<group>"; };
 		CAF6DA30D5EAC3BD9F12B89E /* Pods-WeiChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeiChat/Pods-WeiChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +72,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		47245846218F355400D4B6E7 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				47245844218F2F8400D4B6E7 /* UserTableViewCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
 		47516F5E2188982D007C1979 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,8 +94,36 @@
 			isa = PBXGroup;
 			children = (
 				47516F54218753A5007C1979 /* FUser.swift */,
+				47D366592191DC2C00E61068 /* Recent.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		47E3BDDB2190907200F989AE /* WelcomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				47F09BA9218608B2009FB46E /* WelcomeViewController.swift */,
+				47516F5C2188980F007C1979 /* FinishRegistrationViewController.swift */,
+			);
+			path = WelcomeViews;
+			sourceTree = "<group>";
+		};
+		47E3BDDC2190908F00F989AE /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				47245849218F3EF400D4B6E7 /* ChatsViewController.swift */,
+				47F5D62C218B4B6A002D0ABD /* SettingsTableViewController.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		47E3BDDD219090A100F989AE /* SecondaryViews */ = {
+			isa = PBXGroup;
+			children = (
+				47245847218F357C00D4B6E7 /* UsersTableViewController.swift */,
+				47E3BDD9219085CA00F989AE /* ProfileTableViewController.swift */,
+			);
+			path = SecondaryViews;
 			sourceTree = "<group>";
 		};
 		47F09B8B2186028F009FB46E = {
@@ -100,11 +148,13 @@
 			isa = PBXGroup;
 			children = (
 				47F09B972186028F009FB46E /* AppDelegate.swift */,
-				47F09BA9218608B2009FB46E /* WelcomeViewController.swift */,
-				47516F5C2188980F007C1979 /* FinishRegistrationViewController.swift */,
+				47E3BDDB2190907200F989AE /* WelcomeViews */,
+				47E3BDDC2190908F00F989AE /* MainViews */,
+				47E3BDDD219090A100F989AE /* SecondaryViews */,
 				47F09B9B2186028F009FB46E /* Main.storyboard */,
 				47F09B9E21860290009FB46E /* Assets.xcassets */,
 				47F09BA021860290009FB46E /* LaunchScreen.storyboard */,
+				47245846218F355400D4B6E7 /* CustomCells */,
 				47516F5F21889839007C1979 /* Classes */,
 				47516F5E2188982D007C1979 /* Helpers */,
 				47F09BA321860290009FB46E /* Info.plist */,
@@ -276,11 +326,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				47516F5B2187559A007C1979 /* FCollectionReference.swift in Sources */,
+				47D3665A2191DC2C00E61068 /* Recent.swift in Sources */,
+				47245845218F2F8400D4B6E7 /* UserTableViewCell.swift in Sources */,
 				47516F592187557B007C1979 /* HelperFunctions.swift in Sources */,
 				47516F55218753A5007C1979 /* FUser.swift in Sources */,
 				47F09B982186028F009FB46E /* AppDelegate.swift in Sources */,
+				47F5D62D218B4B6A002D0ABD /* SettingsTableViewController.swift in Sources */,
+				47E3BDDA219085CA00F989AE /* ProfileTableViewController.swift in Sources */,
+				4724584A218F3EF400D4B6E7 /* ChatsViewController.swift in Sources */,
 				47F09BAA218608B2009FB46E /* WelcomeViewController.swift in Sources */,
 				47516F5D2188980F007C1979 /* FinishRegistrationViewController.swift in Sources */,
+				47245848218F357C00D4B6E7 /* UsersTableViewController.swift in Sources */,
 				47516F57218753BF007C1979 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

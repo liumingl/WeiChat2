@@ -46,7 +46,7 @@ class FUser {
         email = _email
         firstname = _firstname
         lastname = _lastname
-        fullname = _firstname + " " + _lastname
+        fullname = _lastname + " " + _firstname
         avatar = _avatar
         isOnline = true
         
@@ -102,7 +102,7 @@ class FUser {
         } else {
             lastname = ""
         }
-        fullname = firstname + " " + lastname
+        fullname = lastname + " " + firstname
         if let avat = _dictionary[kAVATAR] {
             avatar = avat as! String
         } else {

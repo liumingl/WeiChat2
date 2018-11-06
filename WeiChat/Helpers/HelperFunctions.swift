@@ -168,9 +168,9 @@ func imageFromInitials(firstName: String?, lastName: String?, withBlock: @escapi
     var size = 36
     
     if firstName != nil && lastName != nil {
-        string = String(firstName!.first!).uppercased() + String(lastName!.first!).uppercased()
+        string = String(lastName!.first!).uppercased() + String(firstName!.first!).uppercased()
     } else {
-        string = String(firstName!.first!).uppercased()
+        string = String(lastName!.first!).uppercased()
         size = 72
     }
     
