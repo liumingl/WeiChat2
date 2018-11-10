@@ -83,7 +83,7 @@ func timeElapsed(date: Date) -> String {
         elapsed = "\(hours) \(hourText)"
     } else {
         let currentDateFormater = dateFormatter()
-        currentDateFormater.dateFormat = "dd/MM/YYYY"
+        currentDateFormater.dateFormat = "YYYY/MM/dd"
         
         elapsed = "\(currentDateFormater.string(from: date))"
     }

@@ -50,11 +50,11 @@ func createRecent(members: [String], chatRoomId: String, withUserUserName: Strin
     
     for userId in tempMembers {
       // Create recent items
-      
+      createRecentItem(userId: userId, chatRoomId: chatRoomId, members: members, withUserUserName: withUserUserName, type: type, users: users, avatarOfGroup: avatarOfGroup)
     }
-    
   }
 }
+
 
 func createRecentItem(userId: String, chatRoomId: String, members: [String], withUserUserName: String, type: String, users: [FUser]?, avatarOfGroup: String?) {
   
@@ -65,7 +65,7 @@ func createRecentItem(userId: String, chatRoomId: String, members: [String], wit
   var recent: [String: Any]!
   
   if type == kPRIVATE {
-    // Private
+    //private
     var withUser: FUser?
     
     if users != nil && users!.count > 0 {
@@ -75,5 +75,16 @@ func createRecentItem(userId: String, chatRoomId: String, members: [String], wit
         withUser = users!.first
       }
     }
+    
+    recent = [kRECENTID: recentId, kUSERID: userId, kCHATROOMID: chatRoomId, kMEMBERS: members, kMEMBERSTOPUSH: members, kWITHUSERFULLNAME: withUser!.fullname, kWITHUSERUSERID: withUser!.objectId, kLASTMESSAGE: "", kCOUNTER: 0, kDATE: date, kTYPE: type, kAVATAR: withUser!.avatar]
+    
+  }else {
+    //group
+    if avatarOfGroup != nil {
+      recent = [kRECENTID: recentId, kUSERID: userId, kCHATROOMID: chatRoomId, kMEMBERS: members, kMEMBERSTOPUSH: members, kWITHUSERFULLNAME: withUserUserName, kLASTMESSAGE: "", kCOUNTER: 0, kDATE: date, kTYPE: type, kAVATAR: avatarOfGroup!]
+    }
   }
+  
+  //save recent chat
+  localReference.setData(recent)
 }

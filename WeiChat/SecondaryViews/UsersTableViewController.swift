@@ -177,6 +177,7 @@ class UsersTableViewController: UITableViewController {
       user = users![indexPath.row]
     }
     
+    startPrivateChat(user1: FUser.currentUser()!, user2: user)
   }
   
   override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
