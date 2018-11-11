@@ -88,3 +88,13 @@ func createRecentItem(userId: String, chatRoomId: String, members: [String], wit
   //save recent chat
   localReference.setData(recent)
 }
+
+func restartRecentChat(recent: NSDictionary) {
+  if recent[kTYPE] as! String == kPRIVATE {
+    createRecent(members: recent[kMEMBERSTOPUSH] as! [String], chatRoomId: recent[kCHATROOMID] as! String, withUserUserName: recent[kWITHUSERFULLNAME] as! String, type: recent[kTYPE] as! String, users: [FUser.currentUser()!], avatarOfGroup: nil)
+  }
+  
+  if recent[kTYPE] as! String == kGROUP {
+    createRecent(members: recent[kMEMBERSTOPUSH] as! [String], chatRoomId: recent[kCHATROOMID] as! String, withUserUserName: recent[kWITHUSERFULLNAME] as! String, type: kGROUP, users: nil, avatarOfGroup: nil)
+  }
+}
