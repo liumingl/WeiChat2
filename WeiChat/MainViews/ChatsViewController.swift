@@ -208,6 +208,10 @@ extension ChatsViewController: UITableViewDataSource, UITableViewDelegate {
     //restart chat
     restartRecentChat(recent: recent)
     
+    let chatVC = ChatViewController()
+    chatVC.hidesBottomBarWhenPushed = true
+    navigationController?.pushViewController(chatVC, animated: true)
+    
     //show chat view
     
   }

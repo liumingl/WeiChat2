@@ -387,6 +387,21 @@
             </objects>
             <point key="canvasLocation" x="3776.8000000000002" y="-201.04947526236884"/>
         </scene>
+        <!--Messages View Controller-->
+        <scene sceneID="6nt-Rl-Qul">
+            <objects>
+                <viewController id="p8O-HK-h0i" customClass="JSQMessagesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DeY-db-u6P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hp2-LC-vXs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XA1-H8-aiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4594" y="-201"/>
+        </scene>
         <!--Settings-->
         <scene sceneID="Iv2-p5-mNn">
             <objects>
