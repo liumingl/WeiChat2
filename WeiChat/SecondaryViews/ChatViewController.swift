@@ -14,6 +14,11 @@ class ChatViewController: JSQMessagesViewController {
   var outgoingBubble = JSQMessagesBubbleImageFactory()?.outgoingMessagesBubbleImage(with: UIColor.jsq_messageBubbleBlue())
   var incomingBubble = JSQMessagesBubbleImageFactory()?.incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleLightGray())
   
+  var chatRoomId: String!
+  var memberIds: [String]!
+  var membersToPush: [String]!
+  var titleName: String!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -95,6 +100,18 @@ extension ChatViewController {
   //MARK: - Send Message function
   func sendMessage(text: String?, date: Date, picture: UIImage?, location: String?, video: NSURL?, audio: String?) {
     
+    var outgoingMessage: OutgoingMessages?
+    let currentUser = FUser.currentUser()!
+    
+    // text message
+    if let text = text {
+      outgoingMessage = OutgoingMessages(message: text, senderId: currentUser.objectId, senderName: currentUser.fullname, date: date, status: kDELIVERED, type: kTEXT)
+    }
+    
+    outgoingMessage!.sendMessage(chatRoomId: chatRoomId, messageDictionary: outgoingMessage!.messageDictionary, memberIds: memberIds, memberToPush: membersToPush)
+    
+    JSQSystemSoundPlayer.jsq_playMessageSentSound()
+    self.finishSendingMessage()
   }
   
   
