@@ -214,6 +214,7 @@ extension ChatsViewController: UITableViewDataSource, UITableViewDelegate {
     chatVC.memberIds = recent[kMEMBERS] as? [String]
     chatVC.chatRoomId = recent[kCHATROOMID] as? String
     chatVC.titleName = recent[kWITHUSERUSERNAME] as? String
+    chatVC.isGroup = (recent[kTYPE] as! String) == kGROUP
     
     navigationController?.pushViewController(chatVC, animated: true)
     

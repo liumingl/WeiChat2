@@ -49,7 +49,7 @@ class IncomingMessage {
   //MARK: - Create Message type
   func createTextMessage(messageDictionary: NSDictionary, chatRoomId: String) -> JSQMessage {
     let name = messageDictionary[kSENDERNAME] as! String
-    let userId = messageDictionary[kUSERID] as! String
+    let userId = messageDictionary[kSENDERID] as! String
     
     var date: Date!
     if let create = messageDictionary[kDATE] {
