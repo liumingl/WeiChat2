@@ -41,5 +41,17 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>WeiChat need to use your Camera.</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>WeiChat need to use your Media.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>WeiChat need to use your Photo.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>WeiChat need to use your Microphone.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>WeiChat need to use your Location.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>WeiChat need to use your Contacts.</string>
 </dict>
 </plist>

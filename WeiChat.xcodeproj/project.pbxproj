@@ -12,6 +12,9 @@
 		4724584A218F3EF400D4B6E7 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47245849218F3EF400D4B6E7 /* ChatsViewController.swift */; };
 		472526B9219C64CC0093A92E /* OutgoingMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472526B8219C64CC0093A92E /* OutgoingMessages.swift */; };
 		472526BB219C6CE50093A92E /* IncomingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472526BA219C6CE50093A92E /* IncomingMessage.swift */; };
+		472DD66121A44EE40020F453 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472DD66021A44EE40020F453 /* Camera.swift */; };
+		472DD66321A4532D0020F453 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472DD66221A4532D0020F453 /* Download.swift */; };
+		472DD66521A45F4D0020F453 /* PhotoMediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472DD66421A45F4D0020F453 /* PhotoMediaItem.swift */; };
 		47516F5321874B32007C1979 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47516F5221874B32007C1979 /* GoogleService-Info.plist */; };
 		47516F55218753A5007C1979 /* FUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47516F54218753A5007C1979 /* FUser.swift */; };
 		47516F57218753BF007C1979 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47516F56218753BF007C1979 /* Constants.swift */; };
@@ -38,6 +41,9 @@
 		47245849218F3EF400D4B6E7 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		472526B8219C64CC0093A92E /* OutgoingMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutgoingMessages.swift; sourceTree = "<group>"; };
 		472526BA219C6CE50093A92E /* IncomingMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingMessage.swift; sourceTree = "<group>"; };
+		472DD66021A44EE40020F453 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		472DD66221A4532D0020F453 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
+		472DD66421A45F4D0020F453 /* PhotoMediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMediaItem.swift; sourceTree = "<group>"; };
 		47516F5221874B32007C1979 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		47516F54218753A5007C1979 /* FUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FUser.swift; sourceTree = "<group>"; };
 		47516F56218753BF007C1979 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -102,10 +108,13 @@
 		47516F5F21889839007C1979 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				472DD66021A44EE40020F453 /* Camera.swift */,
 				47516F54218753A5007C1979 /* FUser.swift */,
 				47D366592191DC2C00E61068 /* Recent.swift */,
 				472526B8219C64CC0093A92E /* OutgoingMessages.swift */,
 				472526BA219C6CE50093A92E /* IncomingMessage.swift */,
+				472DD66221A4532D0020F453 /* Download.swift */,
+				472DD66421A45F4D0020F453 /* PhotoMediaItem.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -341,13 +350,16 @@
 				47516F5B2187559A007C1979 /* FCollectionReference.swift in Sources */,
 				47D3665A2191DC2C00E61068 /* Recent.swift in Sources */,
 				47245845218F2F8400D4B6E7 /* UserTableViewCell.swift in Sources */,
+				472DD66521A45F4D0020F453 /* PhotoMediaItem.swift in Sources */,
 				472526BB219C6CE50093A92E /* IncomingMessage.swift in Sources */,
 				47516F592187557B007C1979 /* HelperFunctions.swift in Sources */,
 				472526B9219C64CC0093A92E /* OutgoingMessages.swift in Sources */,
 				47516F55218753A5007C1979 /* FUser.swift in Sources */,
+				472DD66121A44EE40020F453 /* Camera.swift in Sources */,
 				47F09B982186028F009FB46E /* AppDelegate.swift in Sources */,
 				47F5D62D218B4B6A002D0ABD /* SettingsTableViewController.swift in Sources */,
 				47E3BDDA219085CA00F989AE /* ProfileTableViewController.swift in Sources */,
+				472DD66321A4532D0020F453 /* Download.swift in Sources */,
 				4724584A218F3EF400D4B6E7 /* ChatsViewController.swift in Sources */,
 				47F09BAA218608B2009FB46E /* WelcomeViewController.swift in Sources */,
 				47516F5D2188980F007C1979 /* FinishRegistrationViewController.swift in Sources */,

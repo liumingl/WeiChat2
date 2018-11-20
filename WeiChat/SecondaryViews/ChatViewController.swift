@@ -102,6 +102,9 @@ class ChatViewController: JSQMessagesViewController {
 
 extension ChatViewController {
   override func didPressAccessoryButton(_ sender: UIButton!) {
+    
+    let camera = Camera(delegate_: self)
+    
     let optionMenu = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
     
     let takePhotoOrVideo = UIAlertAction(title: "Camera", style: .default) { (action) in
@@ -109,7 +112,7 @@ extension ChatViewController {
     }
     
     let sharePhoto = UIAlertAction(title: "Photo Library", style: .default) { (action) in
-      print("Photo Library")
+      camera.PresentPhotoLibrary(target: self, canEdit: false)
     }
     
     let shareVideo = UIAlertAction(title: "Share Video", style: .default) { (action) in
@@ -166,7 +169,22 @@ extension ChatViewController {
       outgoingMessage = OutgoingMessages(message: text, senderId: currentUser.objectId, senderName: currentUser.fullname, date: date, status: kDELIVERED, type: kTEXT)
     }
     
-    outgoingMessage!.sendMessage(chatRoomId: chatRoomId, messageDictionary: outgoingMessage!.messageDictionary, memberIds: memberIds, memberToPush: membersToPush)
+    // picture message
+    if let pic = picture {
+      uploadImage(image: pic, chatRoomId: chatRoomId, view: self.navigationController!.view) { (imageLink) in
+        if imageLink != nil {
+          let text = "[\(kPICTURE)]"
+          outgoingMessage = OutgoingMessages(message: text, pictureLink: imageLink!, senderId: currentUser.objectId, senderName: currentUser.fullname, date: date, status: kDELIVERED, type: kPICTURE)
+          
+          JSQSystemSoundPlayer.jsq_playMessageSentSound()
+          self.finishSendingMessage()
+          outgoingMessage?.sendMessage(chatRoomId: self.chatRoomId, messageDictionary: outgoingMessage!.messageDictionary, memberIds: self.memberIds, memberToPush: self.membersToPush)
+        }
+      }
+      return
+    }
+    
+    outgoingMessage!.sendMessage(chatRoomId: chatRoomId!, messageDictionary: outgoingMessage!.messageDictionary, memberIds: memberIds!, memberToPush: membersToPush!)
     
     JSQSystemSoundPlayer.jsq_playMessageSentSound()
     self.finishSendingMessage()
@@ -445,9 +463,9 @@ extension ChatViewController {
     
     let data = messages[indexPath.row]
     if data.senderId == FUser.currentId() {
-      cell.textView.textColor = .white
+      cell.textView?.textColor = .white
     }else {
-      cell.textView.textColor = .black
+      cell.textView?.textColor = .black
     }
     
     return cell
@@ -535,5 +553,19 @@ extension JSQMessagesInputToolbar {
       let anchor = window.safeAreaLayoutGuide.bottomAnchor
       bottomAnchor.constraint(lessThanOrEqualToSystemSpacingBelow: anchor, multiplier: 1.0).isActive = true
     }
+  }
+}
+
+//MARK: - UIImagePickerController Delegate
+
+extension ChatViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+  func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    let video = info[UIImagePickerController.InfoKey.mediaURL] as? NSURL
+    
+    let picture = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+    
+    sendMessage(text: nil, date: Date(), picture: picture, location: nil, video: video, audio: nil)
+    
+    picker.dismiss(animated: true, completion: nil)
   }
 }
