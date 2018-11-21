@@ -10,6 +10,9 @@ import UIKit
 import JSQMessagesViewController
 import Firebase
 import FirebaseStorage
+import IDMPhotoBrowser
+import AVFoundation
+import AVKit
 
 class ChatViewController: JSQMessagesViewController {
   
@@ -116,7 +119,7 @@ extension ChatViewController {
     }
     
     let shareVideo = UIAlertAction(title: "Share Video", style: .default) { (action) in
-      print("Video Library")
+      camera.PresentVideoLibrary(target: self, canEdit: false)
     }
     
     let shareLocation = UIAlertAction(title: "Share Location", style: .default) { (action) in
@@ -183,6 +186,27 @@ extension ChatViewController {
       }
       return
     }
+    
+    // send video
+    if let video = video {
+      let videoData = NSData(contentsOfFile: video.path!)
+      let thumbNail = videoThumbnail(video: video)
+      let dataThumbnail = thumbNail.jpegData(compressionQuality: 0.7)! as NSData
+      
+      uploadVideo(video: videoData!, chatRoomId: chatRoomId, view: self.navigationController!.view) { (videoLink) in
+        if videoLink != nil {
+          let text = "[\(kVIDEO)]"
+          outgoingMessage = OutgoingMessages(message: text, video: videoLink!, thumbNail: dataThumbnail, senderId: currentUser.objectId, senderName: currentUser.fullname, date: date, status: kDELIVERED, type: kVIDEO)
+          
+          JSQSystemSoundPlayer.jsq_playMessageSentSound()
+          self.finishSendingMessage()
+          outgoingMessage?.sendMessage(chatRoomId: self.chatRoomId, messageDictionary: outgoingMessage!.messageDictionary, memberIds: self.memberIds, memberToPush: self.membersToPush)
+        }
+      }
+      
+      return
+    }
+    
     
     outgoingMessage!.sendMessage(chatRoomId: chatRoomId!, messageDictionary: outgoingMessage!.messageDictionary, memberIds: memberIds!, memberToPush: membersToPush!)
     
@@ -542,6 +566,37 @@ extension ChatViewController {
     //load More Messages
     loadMoreMessages(maxNumber: maxMessageNumber, minNumber: minMessageNumber)
     self.collectionView.reloadData()
+  }
+  
+  override func collectionView(_ collectionView: JSQMessagesCollectionView!, didTapMessageBubbleAt indexPath: IndexPath!) {
+    print("tap on message at \(indexPath!)")
+    
+    let messageDictionary = objectMessages[indexPath.row]
+    let messageType = messageDictionary[kTYPE] as! String
+    
+    switch messageType {
+    case kPICTURE:
+      let message = messages[indexPath.row]
+      let mediaItem = message.media as! PhotoMediaItem
+      let photos = IDMPhoto.photos(withImages: [mediaItem.image])
+      let browser = IDMPhotoBrowser(photos: photos)
+      self.present(browser!, animated: true, completion: nil)
+    case kLOCATION:
+      print("location message tapped")
+    case kVIDEO:
+      let message = messages[indexPath.row]
+      let mediaItem = message.media as! VideoMessage
+      let player = AVPlayer(url: mediaItem.fileURL! as URL)
+      let moviePlayer = AVPlayerViewController()
+      let session = AVAudioSession.sharedInstance()
+      try! session.setCategory(.playAndRecord, mode: .default, options: .defaultToSpeaker)
+      moviePlayer.player = player
+      self.present(moviePlayer, animated: true) {
+        moviePlayer.player!.play()
+      }
+    default:
+      print("unknow media type")
+    }
   }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		470F36EB21A5A8280088C8E9 /* VideoMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470F36EA21A5A8280088C8E9 /* VideoMessage.swift */; };
 		47245845218F2F8400D4B6E7 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47245844218F2F8400D4B6E7 /* UserTableViewCell.swift */; };
 		47245848218F357C00D4B6E7 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47245847218F357C00D4B6E7 /* UsersTableViewController.swift */; };
 		4724584A218F3EF400D4B6E7 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47245849218F3EF400D4B6E7 /* ChatsViewController.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		13FF1467B1EFBFBD2964A707 /* Pods_WeiChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeiChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		470F36EA21A5A8280088C8E9 /* VideoMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoMessage.swift; sourceTree = "<group>"; };
 		47245844218F2F8400D4B6E7 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		47245847218F357C00D4B6E7 /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 		47245849218F3EF400D4B6E7 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				472526BA219C6CE50093A92E /* IncomingMessage.swift */,
 				472DD66221A4532D0020F453 /* Download.swift */,
 				472DD66421A45F4D0020F453 /* PhotoMediaItem.swift */,
+				470F36EA21A5A8280088C8E9 /* VideoMessage.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				47516F5B2187559A007C1979 /* FCollectionReference.swift in Sources */,
 				47D3665A2191DC2C00E61068 /* Recent.swift in Sources */,
 				47245845218F2F8400D4B6E7 /* UserTableViewCell.swift in Sources */,
+				470F36EB21A5A8280088C8E9 /* VideoMessage.swift in Sources */,
 				472DD66521A45F4D0020F453 /* PhotoMediaItem.swift in Sources */,
 				472526BB219C6CE50093A92E /* IncomingMessage.swift in Sources */,
 				47516F592187557B007C1979 /* HelperFunctions.swift in Sources */,
